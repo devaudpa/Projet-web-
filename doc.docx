@@ -1,0 +1,500 @@
+# 📄 DOCUMENTATION - Site Vaisselle & Co
+
+## 🎯 Présentation du Projet
+
+Site web statique pour une entreprise de location de vaisselle et équipements événementiels.
+
+**Technologies utilisées :** HTML5, CSS3, JavaScript (Vanilla)
+
+---
+
+## 📊 Schéma de Navigation
+
+```
+INDEX (Accueil)
+    ├── PRÉSENTATION (À propos)
+    ├── CATALOGUE (Location à l'unité)
+    │   ├── Onglet Assiettes
+    │   ├── Onglet Verres
+    │   ├── Onglet Couverts
+    │   ├── Onglet Accessoires
+    │   └── → Page Détail Produit
+    ├── FORMULES (Packs complets)
+    ├── OFFRES DIVERSES
+    │   ├── Ancre #eclairage
+    │   ├── Ancre #sono
+    │   └── Ancre #mobilier
+    ├── CONTACT (Formulaire)
+    └── MENTIONS LÉGALES
+```
+
+---
+
+## 📁 Structure des Fichiers
+
+### Fichiers HTML (8 pages)
+- `index.html` - Page d'accueil
+- `presentation.html` - Présentation de l'entreprise
+- `catalogue.html` - Catalogue location à l'unité
+- `formules.html` - Formules et packs
+- `offres.html` - Offres diverses (éclairage, sono, mobilier)
+- `contact.html` - Page de contact avec formulaire
+- `mentions-legales.html` - Mentions légales
+- `detail-assiette-plate.html` - Exemple page détail produit
+
+### Fichiers CSS
+**CSS Principal :**
+- `css/style.css` - Styles communs à toutes les pages
+
+**CSS Spécifiques par page :**
+- `css/index.css` - Page accueil
+- `css/presentation.css` - Page présentation
+- `css/catalogue.css` - Page catalogue
+- `css/formules.css` - Page formules
+- `css/offres.css` - Page offres
+- `css/contact.css` - Page contact
+- `css/mentions.css` - Page mentions légales
+- `css/detail.css` - Page détail produit
+
+### Fichiers JavaScript
+- `js/main.js` - Script principal (barre progression, animations, navigation)
+- `js/slideshow.js` - Gestion du diaporama photos
+- `js/counter.js` - Compteur de visites
+- `js/tabs.js` - Gestion des onglets
+- `js/contact.js` - Validation formulaire de contact
+- `js/detail.js` - Fonctionnalités page détail produit
+
+### Ressources
+- `favicon.ico` - Icône du site
+- Dossiers suggérés (à créer) :
+  - `audio/` - Fichiers audio
+  - `video/` - Fichiers vidéo
+  - `images/` - Images locales
+
+---
+
+## 🎨 Maquettes des Pages
+
+### Page Accueil (index.html)
+```
++---------------------------+
+| HEADER FIXE (Menu)        |
++---------------------------+
+| HERO Section              |
+| (Titre + CTA)             |
++---------------------------+
+| Features Grid (3 cards)   |
++---------------------------+
+| DIAPORAMA PHOTOS          |
+| (4 slides auto)           |
++---------------------------+
+| Section "Pourquoi nous"   |
++---------------------------+
+| FOOTER                    |
++---------------------------+
+```
+
+### Page Catalogue (catalogue.html)
+```
++---------------------------+
+| HEADER FIXE               |
++---------------------------+
+| HERO                      |
++---------------------------+
+| ONGLETS (4)               |
+| [Assiettes][Verres]...    |
++---------------------------+
+| GRILLE PRODUITS (4x)      |
+| [Card][Card][Card][Card]  |
++---------------------------+
+| TABLEAU TARIFAIRE         |
++---------------------------+
+| FOOTER                    |
++---------------------------+
+```
+
+### Page Formules (formules.html)
+```
++---------------------------+
+| HEADER FIXE               |
++---------------------------+
+| HERO                      |
++---------------------------+
+| GRILLE FORMULES (4 cards) |
+| [20p][50p][100p][150p]    |
++---------------------------+
+| TABLEAU COMPARATIF        |
++---------------------------+
+| OPTIONS SUPPLÉMENTAIRES   |
++---------------------------+
+| FOOTER                    |
++---------------------------+
+```
+
+### Page Contact (contact.html)
+```
++---------------------------+
+| HEADER FIXE               |
++---------------------------+
+| HERO                      |
++---------------------------+
+| GRID: [INFO] [FORMULAIRE] |
+|       2 colonnes          |
++---------------------------+
+| CARTE / PLAN D'ACCÈS      |
++---------------------------+
+| FAQ RAPIDE                |
++---------------------------+
+| FOOTER                    |
++---------------------------+
+```
+
+---
+
+## 🛠️ Fonctionnalités Techniques Implémentées
+
+### Balises HTML Utilisées
+
+#### Structure
+- `<!DOCTYPE html>` - Déclaration HTML5
+- `<html>`, `<head>`, `<body>` - Structure de base
+- `<meta>` - Métadonnées (charset, viewport)
+- `<title>` - Titre de page
+- `<link>` - Liens CSS et favicon
+
+#### Contenu
+- `<header>`, `<nav>`, `<main>`, `<footer>`, `<section>`, `<article>` - Structure sémantique
+- `<div>`, `<span>` - Conteneurs
+- `<h1>` à `<h4>` - Titres
+- `<p>` - Paragraphes
+- `<a>` - Liens (avec attribut `href`, `target="_blank"`)
+- `<ul>`, `<ol>`, `<li>` - Listes
+- `<img>` - Images (avec `alt`, `src`)
+- `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>` - Tableaux
+
+#### Formulaires
+- `<form>` - Formulaire (avec `action`, `method`)
+- `<input>` - Champs texte, email, tel, date, checkbox, radio
+- `<textarea>` - Zone de texte multiligne
+- `<select>`, `<option>` - Listes déroulantes
+- `<label>` - Étiquettes de champs
+- `<button>` - Boutons
+
+#### Multimédia
+- `<video>` - Vidéo (avec `controls`, `poster`)
+- `<audio>` - Audio (avec `controls`)
+- `<iframe>` - Carte intégrée (OpenStreetMap)
+
+### Propriétés CSS Utilisées
+
+#### Layout
+- `display: flex`, `grid` - Mise en page flexible
+- `grid-template-columns`, `gap` - Grilles
+- `position: fixed`, `sticky`, `absolute`, `relative` - Positionnement
+- `margin`, `padding` - Espacement
+- `width`, `height`, `max-width` - Dimensions
+
+#### Apparence
+- `background`, `background-image`, `linear-gradient()` - Arrière-plans
+- `color` - Couleurs de texte
+- `border`, `border-radius` - Bordures
+- `box-shadow` - Ombres
+- `opacity` - Transparence
+
+#### Typographie
+- `font-family`, `font-size`, `font-weight` - Police
+- `text-align`, `text-decoration` - Alignement texte
+- `line-height` - Interligne
+
+#### Effets & Animations
+- `transition` - Transitions CSS
+- `transform` - Transformations (translateY, scale, etc.)
+- `animation`, `@keyframes` - Animations CSS
+- `:hover`, `:active`, `:focus` - Pseudo-classes
+- `::before`, `::after` - Pseudo-éléments
+
+#### Responsive
+- `@media` - Media queries
+- `overflow` - Dépassement
+
+---
+
+## ⚙️ Fonctionnalités JavaScript
+
+### 1. **Barre de progression** (main.js)
+- Affiche la progression du scroll en haut de page
+- Se remplit au fur et à mesure du défilement
+
+### 2. **Menu fixe en haut** (CSS + main.js)
+- Header avec `position: fixed`
+- Reste visible pendant le scroll
+
+### 3. **Galerie photo en diaporama** (slideshow.js)
+- 4 photos qui défilent automatiquement (5s)
+- Boutons précédent/suivant
+- Navigation par points (dots)
+- Support tactile (swipe)
+- Pause au survol
+
+### 4. **Compteur de visites** (counter.js)
+- Incrémente à chaque chargement
+- Animation de comptage
+- Affiché en bas à droite
+
+### 5. **Menu/Onglets** (tabs.js)
+- 4 onglets dans la page catalogue
+- Affichage dynamique du contenu
+- Support clavier (Ctrl + flèches)
+
+### 6. **Formulaire de contact** (contact.js)
+- Validation en temps réel
+- Vérification email, téléphone
+- Messages d'erreur personnalisés
+- Message de confirmation après envoi
+- Formatage automatique du téléphone
+
+### 7. **Page détail produit** (detail.js)
+- Changement d'image au clic sur miniature
+- Zoom sur image principale
+- Calcul prix selon quantité
+- Tarifs dégressifs automatiques
+
+### 8. **Smooth scroll** (main.js)
+- Défilement fluide vers les ancres
+- Utilisé pour navigation rapide
+
+### 9. **Animations au scroll** (main.js)
+- Cards qui apparaissent progressivement
+- Effet fade-in + translate
+
+### 10. **Responsive** (main.js + CSS)
+- Menu hamburger sur mobile
+- Adaptation des grilles
+- Media queries
+
+---
+
+## 📋 Liste des Fonctionnalités du Cahier des Charges
+
+### ✅ Informations pratiques (Pages dédiées)
+- [x] Page présentation entreprise
+- [x] Page contact avec formulaire
+- [x] Liens réseaux sociaux (Facebook, Twitter, Instagram, LinkedIn)
+- [x] Page mentions légales complète
+
+### ✅ Catalogue locations à l'unité
+- [x] 4 types de vaisselle (Assiettes, Verres, Couverts, Accessoires)
+- [x] 16 produits au total (4 par catégorie)
+- [x] Pages détail avec tarif et photo
+- [x] Tableau récapitulatif des tarifs
+
+### ✅ Formules de location
+- [x] 4 formules (Intime 20p, Conviviale 50p, Festive 100p, Prestige 150p)
+- [x] Photos pour chaque formule
+- [x] Composition détaillée
+- [x] Tableau comparatif
+
+### ✅ Offres diverses
+- [x] Éclairage (4 produits)
+- [x] Sonorisation (4 produits)
+- [x] Mobilier (4 produits)
+- [x] Photos et descriptions
+
+### ✅ Fonctionnalités techniques
+- [x] Menu/Onglets
+- [x] Tableaux
+- [x] Listes
+- [x] Envoi de mail via formulaire contact
+- [x] Photos
+- [x] Vidéos
+- [x] Formulaires (cases à cocher, listes déroulantes)
+- [x] Fonds d'écran (backgrounds dégradés)
+- [x] Fichiers audio
+- [x] Ancres (navigation rapide)
+- [x] Site responsive
+- [x] Compteur de visites
+- [x] Favicon
+
+### ✅ Fonctionnalités supplémentaires
+- [x] Barre de menu fixe en haut
+- [x] Galerie photo en diaporama
+- [x] Barre de progression
+
+---
+
+## 👥 Répartition des Tâches (Suggestion)
+
+### **Loane**
+#### HTML
+- index.html (Page d'accueil)
+- presentation.html (Page présentation)
+
+#### CSS
+- style.css (CSS principal commun)
+- index.css (Styles page accueil)
+- presentation.css (Styles page présentation)
+
+#### JavaScript
+- main.js (Script principal avec barre de progression)
+- slideshow.js (Diaporama photos)
+
+**Tâches :** Structure HTML de base, navigation, header/footer, diaporama, animations scroll
+
+---
+
+### **PA (Pierre-Antoine)**
+#### HTML
+- catalogue.html (Catalogue à l'unité)
+- detail-assiette-plate.html (Page détail produit exemple)
+
+#### CSS
+- catalogue.css (Styles catalogue)
+- detail.css (Styles page détail)
+
+#### JavaScript
+- tabs.js (Gestion des onglets)
+- detail.js (Fonctionnalités page détail)
+
+**Tâches :** Système d'onglets, catalogue produits, pages détail, galerie images
+
+---
+
+### **Jules**
+#### HTML
+- formules.html (Formules et packs)
+- offres.html (Offres diverses)
+
+#### CSS
+- formules.css (Styles formules)
+- offres.css (Styles offres)
+
+**Tâches :** Grilles de cartes, tableaux comparatifs, navigation par ancres, sections catégories
+
+---
+
+### **Théo**
+#### HTML
+- contact.html (Page contact)
+- mentions-legales.html (Mentions légales)
+
+#### CSS
+- contact.css (Styles contact)
+- mentions.css (Styles mentions légales)
+
+#### JavaScript
+- contact.js (Validation formulaire)
+- counter.js (Compteur de visites)
+
+**Tâches :** Formulaire de contact, validation JavaScript, carte/plan d'accès, mentions légales
+
+---
+
+## 🚀 Installation et Utilisation
+
+### Prérequis
+- Navigateur web moderne (Chrome, Firefox, Edge, Safari)
+- Éditeur de code (VS Code, Sublime Text, etc.)
+
+### Structure à créer
+```
+vaisselle-co/
+├── index.html
+├── presentation.html
+├── catalogue.html
+├── formules.html
+├── offres.html
+├── contact.html
+├── mentions-legales.html
+├── detail-assiette-plate.html
+├── favicon.ico
+├── css/
+│   ├── style.css
+│   ├── index.css
+│   ├── presentation.css
+│   ├── catalogue.css
+│   ├── formules.css
+│   ├── offres.css
+│   ├── contact.css
+│   ├── mentions.css
+│   └── detail.css
+├── js/
+│   ├── main.js
+│   ├── slideshow.js
+│   ├── counter.js
+│   ├── tabs.js
+│   ├── contact.js
+│   └── detail.js
+├── audio/ (optionnel)
+├── video/ (optionnel)
+└── images/ (optionnel)
+```
+
+### Lancement
+1. Extraire tous les fichiers dans un dossier
+2. Ouvrir `index.html` dans un navigateur
+3. Naviguer entre les pages via le menu
+
+---
+
+## 📝 Notes Importantes
+
+- **Images** : Les images utilisent Unsplash via CDN. Pour un site en production, télécharger et héberger les images localement.
+- **Favicon** : Créer un fichier `favicon.ico` (16x16 ou 32x32 pixels) avec le logo de l'entreprise.
+- **Audio/Vidéo** : Placer les fichiers médias dans les dossiers correspondants et mettre à jour les chemins.
+- **Formulaire** : L'action `mailto:` est basique. Pour un vrai site, utiliser un script backend (PHP, Node.js).
+- **Compteur** : Utilise une variable JavaScript (données non persistantes). Pour un vrai compteur, utiliser une base de données.
+
+---
+
+## 🎨 Charte Graphique
+
+### Couleurs Principales
+- **Primaire** : #667eea (Bleu violet)
+- **Secondaire** : #764ba2 (Violet)
+- **Succès** : #27ae60 (Vert)
+- **Warning** : #f39c12 (Orange)
+- **Danger** : #e74c3c (Rouge)
+- **Gris** : #666, #999, #f8f9fa
+
+### Typographie
+- **Police principale** : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+- **Tailles** :
+  - H1 : 1.8rem (header) / 3.5rem (hero)
+  - H2 : 2.5rem
+  - H3 : 1.8rem
+  - Texte : 1rem
+
+### Espacements
+- Container : max-width 1200px
+- Gap grilles : 2rem
+- Padding sections : 4rem 0
+
+---
+
+## 📱 Responsive Breakpoints
+
+- **Desktop** : > 968px
+- **Tablet** : 768px - 968px
+- **Mobile** : < 768px
+- **Small Mobile** : < 480px
+
+---
+
+## ✨ Améliorations Futures Possibles
+
+1. **Backend** : Système de réservation en ligne avec base de données
+2. **CMS** : Administration du catalogue via interface
+3. **Paiement** : Intégration Stripe/PayPal
+4. **Multilingue** : Version anglaise du site
+5. **PWA** : Application web progressive
+6. **SEO** : Optimisation référencement
+7. **Analytics** : Google Analytics pour statistiques
+8. **Newsletter** : Système d'inscription newsletter
+9. **Chat** : Chat en direct pour support client
+10. **Blog** : Section actualités/conseils événements
+
+---
+
+**Date de création :** Octobre 2025  
+**Version :** 1.0  
+**Auteurs :** Loane, PA, Jules, Théo

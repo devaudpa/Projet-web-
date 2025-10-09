@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaisselle & Co - Location de vaisselle</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+
+</head>
+<body>
+    <!-- Barre de progression -->
+    <div id="progressBar"></div>
+
+    <!-- Header fixe -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🍽️ Vaisselle & Co</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="formules.html">Formules</a></li>
+                    <li><a href="offres.html">Offres Diverses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Compteur de visites -->
+    <div class="visit-counter">
+        <span id="visitCount">0</span> visites
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Bienvenue chez Vaisselle & Co</h2>
+                <p>Votre partenaire pour tous vos événements</p>
+                <a href="catalogue.html" class="cta-button">Découvrir nos produits</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Nos Services</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>🍽️ Vaisselle</h3>
+                        <p>Large choix d'assiettes, verres, couverts pour tous vos événements</p>
+                        <a href="catalogue.html">Voir le catalogue</a>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📦 Formules</h3>
+                        <p>Des packs complets adaptés au nombre de vos invités</p>
+                        <a href="formules.html">Nos formules</a>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💡 Équipements</h3>
+                        <p>Éclairage, sono, mobilier pour compléter votre location</p>
+                        <a href="offres.html">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerie diaporama -->
+        <section class="slideshow-section">
+            <div class="container">
+                <h2>Nos Réalisations</h2>
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=800" alt="Mariage élégant">
+                        <div class="slide-caption">Mariage élégant - 150 personnes</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800" alt="Événement corporate">
+                        <div class="slide-caption">Événement corporate - 200 personnes</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800" alt="Anniversaire">
+                        <div class="slide-caption">Anniversaire champêtre - 80 personnes</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800" alt="Baptême">
+                        <div class="slide-caption">Baptême familial - 50 personnes</div>
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1)">❮</a>
+                    <a class="next" onclick="changeSlide(1)">❯</a>
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ancre -->
+        <section id="pourquoi-nous" class="why-us">
+            <div class="container">
+                <h2>Pourquoi nous choisir ?</h2>
+                <ul class="advantages-list">
+                    <li>✓ Plus de 15 ans d'expérience</li>
+                    <li>✓ Matériel de qualité professionnelle</li>
+                    <li>✓ Livraison et installation incluses</li>
+                    <li>✓ Service client réactif 7j/7</li>
+                    <li>✓ Tarifs compétitifs</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Audio -->
+        <section class="audio-section">
+            <div class="container">
+                <h3>🎵 Découvrez notre ambiance</h3>
+                <audio controls>
+                    <source src="audio/ambiance.mp3" type="audio/mpeg">
+                    Votre navigateur ne supporte pas l'audio HTML5.
+                </audio>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Vaisselle & Co</h4>
+                    <p>Location de vaisselle et équipements pour événements depuis 2010</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="presentation.html">Qui sommes-nous ?</a></li>
+                        <li><a href="catalogue.html">Catalogue</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank">📘 Facebook</a>
+                        <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+                        <a href="https://instagram.com" target="_blank">📷 Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vaisselle & Co - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="slideshow.js"></script>
+    <script src="counter.js"></script>
+</body>
+</html>

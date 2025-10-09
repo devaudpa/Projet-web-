@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Vaisselle & Co</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div id="progressBar"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🍽️ Vaisselle & Co</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="formules.html">Formules</a></li>
+                    <li><a href="offres.html">Offres Diverses</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="visit-counter">
+        <span id="visitCount">0</span> visites
+    </div>
+
+    <main>
+        <section class="hero-contact">
+            <div class="container">
+                <h2>Contactez-nous</h2>
+                <p class="subtitle">Notre équipe est à votre écoute 7j/7</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Informations de contact -->
+                    <div class="contact-info">
+                        <h3>Nos Coordonnées</h3>
+                        
+                        <div class="info-block">
+                            <h4>📍 Adresse</h4>
+                            <p>15 Rue de la Vaisselle<br>
+                            53000 Laval<br>
+                            Mayenne, France</p>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>📞 Téléphone</h4>
+                            <p><a href="tel:+33243530000">02 43 53 00 00</a></p>
+                            <p class="small-text">Disponible 7j/7 de 9h à 20h</p>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>✉️ Email</h4>
+                            <p><a href="mailto:contact@vaisselleco.fr">contact@vaisselleco.fr</a></p>
+                            <p class="small-text">Réponse sous 24h garantie</p>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>⏰ Horaires</h4>
+                            <ul class="hours-list">
+                                <li><strong>Lundi - Vendredi :</strong> 9h - 19h</li>
+                                <li><strong>Samedi :</strong> 10h - 18h</li>
+                                <li><strong>Dimanche :</strong> 14h - 18h</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>🌐 Réseaux Sociaux</h4>
+                            <div class="social-icons">
+                                <a href="https://facebook.com/vaisselleco" target="_blank" class="social-icon">📘 Facebook</a>
+                                <a href="https://twitter.com/vaisselleco" target="_blank" class="social-icon">🐦 Twitter</a>
+                                <a href="https://instagram.com/vaisselleco" target="_blank" class="social-icon">📷 Instagram</a>
+                                <a href="https://linkedin.com/company/vaisselleco" target="_blank" class="social-icon">💼 LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulaire de contact -->
+                    <div class="contact-form-wrapper">
+                        <h3>Envoyez-nous un message</h3>
+                        <form id="contactForm" action="mailto:contact@vaisselleco.fr" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="nom">Nom complet *</label>
+                                <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="votre.email@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telephone">Téléphone</label>
+                                <input type="tel" id="telephone" name="telephone" placeholder="06 12 34 56 78">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="type">Type d'événement *</label>
+                                <select id="type" name="type" required>
+                                    <option value="">-- Sélectionnez --</option>
+                                    <option value="mariage">Mariage</option>
+                                    <option value="anniversaire">Anniversaire</option>
+                                    <option value="bapteme">Baptême</option>
+                                    <option value="entreprise">Événement d'entreprise</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date">Date de l'événement</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="personnes">Nombre de personnes</label>
+                                <select id="personnes" name="personnes">
+                                    <option value="">-- Sélectionnez --</option>
+                                    <option value="1-20">1 à 20 personnes</option>
+                                    <option value="20-50">20 à 50 personnes</option>
+                                    <option value="50-100">50 à 100 personnes</option>
+                                    <option value="100-150">100 à 150 personnes</option>
+                                    <option value="150+">Plus de 150 personnes</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Services souhaités *</label>
+                                <div class="checkbox-group">
+                                    <label>
+                                        <input type="checkbox" name="services" value="vaisselle">
+                                        Vaisselle
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="services" value="mobilier">
+                                        Mobilier
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="services" value="eclairage">
+                                        Éclairage
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="services" value="sono">
+                                        Sonorisation
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required placeholder="Décrivez-nous votre projet..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" value="oui">
+                                    Je souhaite recevoir la newsletter et les offres promotionnelles
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="rgpd" required>
+                                    J'accepte que mes données soient utilisées pour me recontacter *
+                                </label>
+                            </div>
+
+                            <button type="submit" class="submit-button">Envoyer le message</button>
+                            <p class="form-note">* Champs obligatoires</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carte / Plan d'accès -->
+        <section class="map-section">
+            <div class="container">
+                <h3>Plan d'accès</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.7863998413085938%2C48.06519087553305%2C-0.7435226440429688%2C48.08449843774894&amp;layer=mapnik&amp;marker=48.074844765407275%2C-0.7649612426757812" 
+                        width="100%" 
+                        height="450" 
+                        frameborder="0" 
+                        style="border:0; border-radius: 15px;" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="access-info">
+                    <h4>🚗 Accès</h4>
+                    <ul>
+                        <li><strong>En voiture :</strong> Sortie A81, direction Centre-ville, parking gratuit disponible</li>
+                        <li><strong>En train :</strong> Gare de Laval à 5 min en taxi</li>
+                        <li><strong>En bus :</strong> Lignes 3 et 7, arrêt "Vaisselle & Co"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ rapide -->
+        <section class="faq-quick">
+            <div class="container">
+                <h3>Questions Fréquentes</h3>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>💬 Quel est le délai de réservation ?</h4>
+                        <p>Nous recommandons de réserver au moins 2 semaines à l'avance. Pour les événements importants (mariages, etc.), prévoyez 1 à 2 mois.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>🚚 La livraison est-elle incluse ?</h4>
+                        <p>La livraison est offerte pour les commandes supérieures à 300€. Sinon, comptez à partir de 50€ selon la distance.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>💳 Quels sont les moyens de paiement ?</h4>
+                        <p>Nous acceptons CB, chèque, virement bancaire. Un acompte de 30% est demandé à la réservation.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>🔄 Que faire en cas de casse ?</h4>
+                        <p>Une franchise de 10% est incluse. Au-delà, la vaisselle cassée est facturée au prix catalogue.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Vaisselle & Co</h4>
+                    <p>Location de vaisselle et équipements pour événements depuis 2010</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="presentation.html">Qui sommes-nous ?</a></li>
+                        <li><a href="catalogue.html">Catalogue</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank">📘 Facebook</a>
+                        <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+                        <a href="https://instagram.com" target="_blank">📷 Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vaisselle & Co - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

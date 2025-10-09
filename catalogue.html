@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - Vaisselle & Co</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalogue.css">
+</head>
+<body>
+    <div id="progressBar"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🍽️ Vaisselle & Co</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="catalogue.html" class="active">Catalogue</a></li>
+                    <li><a href="formules.html">Formules</a></li>
+                    <li><a href="offres.html">Offres Diverses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="visit-counter">
+        <span id="visitCount">0</span> visites
+    </div>
+
+    <main>
+        <section class="hero-catalogue">
+            <div class="container">
+                <h2>Catalogue de Location à l'Unité</h2>
+                <p class="subtitle">Composez votre sélection sur mesure</p>
+            </div>
+        </section>
+
+        <!-- Onglets de navigation -->
+        <section class="tabs-section">
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-button active" onclick="showTab('assiettes')">Assiettes</button>
+                    <button class="tab-button" onclick="showTab('verres')">Verres</button>
+                    <button class="tab-button" onclick="showTab('couverts')">Couverts</button>
+                    <button class="tab-button" onclick="showTab('accessoires')">Accessoires</button>
+                </div>
+
+                <!-- Contenu Assiettes -->
+                <div id="assiettes" class="tab-content active">
+                    <h3>🍽️ Assiettes</h3>
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?w=400" alt="Assiette plate blanche">
+                            <h4>Assiette Plate Blanche</h4>
+                            <p class="description">Porcelaine fine, diamètre 27cm</p>
+                            <p class="price">0,80€ / unité</p>
+                            <a href="detail-assiette-plate.html" class="detail-link">Voir détails</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400" alt="Assiette creuse">
+                            <h4>Assiette Creuse</h4>
+                            <p class="description">Porcelaine blanche, 23cm</p>
+                            <p class="price">0,70€ / unité</p>
+                            <a href="detail-assiette-creuse.html" class="detail-link">Voir détails</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?w=400" alt="Assiette dessert">
+                            <h4>Assiette à Dessert</h4>
+                            <p class="description">Porcelaine, diamètre 21cm</p>
+                            <p class="price">0,60€ / unité</p>
+                            <a href="detail-assiette-dessert.html" class="detail-link">Voir détails</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1584990347449-29e447e49e8f?w=400" alt="Assiette carrée">
+                            <h4>Assiette Carrée Design</h4>
+                            <p class="description">Porcelaine moderne, 25x25cm</p>
+                            <p class="price">1,20€ / unité</p>
+                            <a href="detail-assiette-carree.html" class="detail-link">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenu Verres -->
+                <div id="verres" class="tab-content">
+                    <h3>🥂 Verres</h3>
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1618255525757-750a1d665e7a?w=400" alt="Verre à vin">
+                            <h4>Verre à Vin</h4>
+                            <p class="description">Cristallin, 35cl</p>
+                            <p class="price">0,50€ / unité</p>
+                            <a href="detail-verre-vin.html" class="detail-link">Voir détails</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1509669803555-fd5b84e4f7f5?w=400" alt="Flûte champagne">
+                            <h4>Flûte à Champagne</h4>
+                            <p class="description">Cristallin élégant, 20cl</p>
+                            <p class="price">0,60€ / unité</p>
+                            <a href="detail-flute.html" class="detail-link">Voir détails</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?w=400" alt="Verre à eau">
+                            <h4>Verre à Eau</h4>
+                            <p class="description">Verre transparent, 30cl</p>
+                            <p class="price">0,40€ / unité</p>
+                            <a href="detail-verre-eau.html" class="detail-link">Voir détails</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400" alt="Verre cocktail">
+                            <h4>Verre à Cocktail</h4>
+                            <p class="description">Design moderne, 25cl</p>
+                            <p class="price">0,70€ / unité</p>
+                            <a href="detail-verre-cocktail.html" class="detail-link">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenu Couverts -->
+                <div id="couverts" class="tab-content">
+                    <h3>🍴 Couverts</h3>
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1606676539940-12768ce0e762?w=400" alt="Fourchette">
+                            <h4>Fourchette de Table</h4>
+                            <p class="description">Inox 18/10, finition brillante</p>
+                            <p class="price">0,30€ / unité</p>
+                            <a href="detail-fourchette.html" class="detail-link">Voir détails</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1585937359924-1c0949c8f2f0?w=400" alt="Couteau">
+                            <h4>Couteau de Table</h4>
+                            <p class="description">Inox 18/10, lame inox</p>
+                            <p class="price">0,35€ / unité</p>
+                            <a href="detail-couteau.html" class="detail-link">Voir détails</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=400" alt="Cuillère">
+                            <h4>Cuillère à Soupe</h4>
+                            <p class="description">Inox 18/10, design classique</p>
+                            <p class="price">0,30€ / unité</p>
+                            <a href="detail-cuillere.html" class="detail-link">Voir détails</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1566843972142-a7a8f0b97f27?w=400" alt="Ménagère complète">
+                            <h4>Ménagère Complète</h4>
+                            <p class="description">Couteau + Fourchette + Cuillère</p>
+                            <p class="price">0,90€ / set</p>
+                            <a href="detail-menagere.html" class="detail-link">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenu Accessoires -->
+                <div id="accessoires" class="tab-content">
+                    <h3>🎨 Accessoires</h3>
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1556911073-38141963c9e0?w=400" alt="Nappe">
+                            <h4>Nappe Blanche</h4>
+                            <p class="description">Tissu damassé, 150x250cm</p>
+                            <p class="price">8,00€ / unité</p>
+                            <a href="detail-nappe.html" class="detail-link">Voir détails</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400" alt="Serviette">
+                            <h4>Serviette Tissu</h4>
+                            <p class="description">Coton 50x50cm, couleurs variées</p>
+                            <p class="price">0,50€ / unité</p>
+                            <a href="detail-serviette.html" class="detail-link">Voir détails</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1523243319451-54abd13b5657?w=400" alt="Carafe">
+                            <h4>Carafe en Verre</h4>
+                            <p class="description">Verre soufflé, 1,5L</p>
+                            <p class="price">2,50€ / unité</p>
+                            <a href="detail-carafe.html" class="detail-link">Voir détails</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1587814213271-80047041b021?w=400" alt="Corbeille à pain">
+                            <h4>Corbeille à Pain</h4>
+                            <p class="description">Osier tressé, diamètre 25cm</p>
+                            <p class="price">1,50€ / unité</p>
+                            <a href="detail-corbeille.html" class="detail-link">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tableau récapitulatif des tarifs -->
+        <section class="pricing-table">
+            <div class="container">
+                <h3>Grille Tarifaire Récapitulative</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Catégorie</th>
+                            <th>Article</th>
+                            <th>Prix unitaire</th>
+                            <th>Prix par 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Assiettes</td>
+                            <td>Assiette plate blanche</td>
+                            <td>0,80€</td>
+                            <td>7,00€</td>
+                        </tr>
+                        <tr>
+                            <td>Assiettes</td>
+                            <td>Assiette creuse</td>
+                            <td>0,70€</td>
+                            <td>6,00€</td>
+                        </tr>
+                        <tr>
+                            <td>Verres</td>
+                            <td>Verre à vin</td>
+                            <td>0,50€</td>
+                            <td>4,50€</td>
+                        </tr>
+                        <tr>
+                            <td>Verres</td>
+                            <td>Flûte à champagne</td>
+                            <td>0,60€</td>
+                            <td>5,50€</td>
+                        </tr>
+                        <tr>
+                            <td>Couverts</td>
+                            <td>Ménagère complète</td>
+                            <td>0,90€</td>
+                            <td>8,00€</td>
+                        </tr>
+                        <tr>
+                            <td>Accessoires</td>
+                            <td>Nappe blanche</td>
+                            <td>8,00€</td>
+                            <td>70,00€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="note">* Tarifs dégressifs disponibles à partir de 50 unités. Nous consulter.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Vaisselle & Co</h4>
+                    <p>Location de vaisselle et équipements pour événements depuis 2010</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="presentation.html">Qui sommes-nous ?</a></li>
+                        <li><a href="catalogue.html">Catalogue</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank">📘 Facebook</a>
+                        <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+                        <a href="https://instagram.com" target="_blank">📷 Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vaisselle & Co - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="counter.js"></script>
+    <script src="tabs.js"></script>
+</body>
+</html>
