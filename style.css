@@ -1,4 +1,4 @@
-/* ===== RESET & BASE ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,21 +19,21 @@ body {
     padding: 0 20px;
 }
 
-/* ===== BARRE DE PROGRESSION ===== */
+
 #progressBar {
     position: fixed;
     top: 0;
     left: 0;
     width: 0%;
     height: 4px;
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(90deg, grey, grey 100%);
     z-index: 9999;
     transition: width 0.1s ease;
 }
 
-/* ===== HEADER FIXE ===== */
+
 header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, grey 0%, grey 100%);
     color: white;
     padding: 1rem 0;
     position: fixed;
@@ -81,7 +81,7 @@ header nav a.active {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #667eea;
+    background: grey;
     color: white;
     padding: 10px 20px;
     border-radius: 50px;
@@ -101,14 +101,14 @@ section {
 }
 
 h2 {
-    color: #667eea;
+    color: grey;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
 }
 
 h3 {
-    color: #764ba2;
+    color: grey;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -116,7 +116,7 @@ h3 {
 /* ===== BOUTONS ===== */
 .cta-button, button {
     display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, grey 0%, grey 100%);
     color: white;
     padding: 12px 30px;
     text-decoration: none;
@@ -184,7 +184,7 @@ input:focus,
 textarea:focus,
 select:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: grey;
     box-shadow: 0 0 10px rgba(102, 126, 234, 0.2);
 }
 
@@ -213,7 +213,7 @@ table {
 }
 
 thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, grey 0%, grey 100%);
     color: white;
 }
 
@@ -308,7 +308,7 @@ ul {
 }
 
 .prev:hover, .next:hover {
-    background: rgba(102, 126, 234, 0.8);
+    background: rgba(90, 91, 92, 0.8);
 }
 
 .dots-container {
@@ -329,7 +329,7 @@ ul {
 
 .dot.active,
 .dot:hover {
-    background-color: #667eea;
+    background-color:grey;
     transform: scale(1.2);
 }
 
@@ -358,7 +358,7 @@ footer {
 }
 
 .footer-section h4 {
-    color: #667eea;
+    color: grey;
     margin-bottom: 1rem;
 }
 
@@ -371,13 +371,13 @@ footer {
 }
 
 .footer-section a {
-    color: #ccc;
+    color:grey;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-section a:hover {
-    color: #667eea;
+    color: grey;
 }
 
 .social-links {
